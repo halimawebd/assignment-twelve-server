@@ -1,0 +1,20 @@
+[
+    {
+        "c_id": 1,
+        "name": "HP Laptop",
+        "logo": "https://seeklogo.com/images/W/walton-logo-8655B6D7F3-seeklogo.com.png"
+        
+    },
+    {
+        "c_id": 2,
+        "name": "Dell Laptop",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.sv--"
+
+    },
+    {
+        "c_id": 3,
+        "name":"Walton Laptop",
+        "logo": "https://seeklogo.com/images/W/walton-logo-8655B6D7F3-seeklogo.com.png"
+    }
+    
+]

@@ -1,0 +1,118 @@
+[
+    {
+        
+        "category_id":"1",
+        "seller_name": "Sheauly Akhter",
+        "included": "1 Year On-site Warranty",
+        "rating":"Object" ,
+        "price": "2000",
+        "original_price": "56,000",
+        "product_name": "HP Pavilion Gaming Laptop 15 (38.61 cm) ec2151AX",
+        "condition": "Good",
+        "Display": "15.0 (35.56cm) HD (1366x768) Matte LED Backlit Display with 45% NTSC",
+        "Generation": "Intel 10th Generation Processor",
+        "CPU": "Intel Core 13-10110U 2.10GHz upto 4.10GHz" ,
+        "Cache_Memory": "4/6/8 MB Intell Smart Cache",
+        "RAM": "8GBDDRA 2666MHz RAM",
+        "Storage": "512GB SATAIII M.2 2280 SSD",
+        "Communication": "WI-FI 5.0 (802.11ac) + BT 5.1"
+
+    },
+    {
+        
+        "category_id":"2",
+        "seller_name": "Juma Ahter",
+        "included": "8 Month On-site Warranty",
+        "rating":"Object" ,
+        "price": "3500",
+        "original_price": "60,00",
+        "product_name": "HP Pavilion Gaming Laptop 15 (35.61 cm) ec2151AX ",
+        "condition": "Good",
+        "Display": "16.0 (37.58cm) HD (1367x778) Matte LED Backlit Display with 45% NTSC",
+        "Generation": "Intel 10th Generation Processor",
+        "CPU": "Intel Core 15-10410U 2.10GHz upto 5.10GHz" ,
+        "Cache_Memory": "4/8/10 MB Intell Smart Cache",
+        "RAM": "8GBDDRA 2666MHz RAM"  ,
+        "Storage": "518GB SATAIII M.2 2282 SSD",
+        "Communication": "WI-FI 6.0 (852.11ac) + BT 5.1"
+
+    },
+    {
+        
+        "category_id":"3",
+        "seller_name": "Amdaul Haque",
+        "included": "1 Year On-site Warranty",
+        "rating":"Object" ,
+        "price": "4000",
+        "original_price": "80,00",
+        "product_name": "Dell Pavilion Gaming Laptop 15 (41.61 cm) ec2151AX",
+        "condition": "Fair",
+        "Display": "17.0 (39.58cm) HD (1367x778) Matte LED Backlit Display with 45% NTSC",
+        "Generation": "Intel 10th Generation Processor",
+        "CPU": "Intel Core 17-10410U 3.10GHz upto 6.10GHz" ,
+        "Cache_Memory": "5/8/10 MB Intell Smart Cache",
+        "RAM": "8GBDDRA 2666MHz RAM"  ,
+        "Storage": "528GB SATAIII M.2 2282 SSD",
+        "Communication": "WI-FI 6.12 (852.11ac) + BT 5.1"
+
+    },
+    {
+        
+        "category_id":"4",
+        "seller_name": "Sheauly Akhter",
+        "included": "2 Year On-site Warranty",
+        "rating":"Object" ,
+        "price": "4200",
+        "original_price": "67,00",
+        "product_name": "Dell Pavilion Gaming Laptop 15 (43.60 cm) ec2151AX",
+        "condition": "Good",
+        "Display": "17.0 (42.60cm) HD (1367x778) Matte LED Backlit Display with 45% NTSC",
+        "Generation": "Intel 10th Generation Processor",
+        "CPU": "Intel Core 17-10410U 3.10GHz upto 6.10GHz" ,
+        "Cache_Memory": "6/8/10 MB Intell Smart Cache",
+        "RAM": "10GBDDRA 2666MHz RAM"  ,
+        "Storage": "528GB SATAIII M.2 2282 SSD",
+        "Communication": "WI-FI 6.12 (852.11ac) + BT 5.1",
+        "LOcation": "Kishoregonj, Dhaka"
+
+    },
+    {
+        
+        "category_id":"5",
+        "seller_name": "Halima Akhter",
+        "included": "10 Manth On-site Warranty",
+        "rating":"Object" ,
+        "price": "26,00",
+        "original_price": "59,950",
+        "product_name": "Walton Pavilion Gaming Laptop 15 (43.60 cm) ec2151AX",
+        "condition": "Good",
+        "Display": "35.56cm (14.0) HD Matte LED Backlit Display with 45% NTSC",
+        "Generation": "8th Generation Processor",
+        "CPU": "Intel® Core™ i7-8550U 1.80GHz" ,
+        "Cache_Memory": "8 MB Intel® Smart Cache",
+        "RAM": "8GB DDR4 2400MHz RAM"  ,
+        "Storage": "1TB HDD, 5400rpm, 7mm",
+        "Communication": "Wi-Fi 5.0 (802.11ac) + BT 4.2"
+
+    },
+    {
+        
+        "category_id":"6",
+        "seller_name": "Aminul Haque",
+        "included": "1 Year On-site Warranty",
+        "rating":"Object" ,
+        "price": "2700",
+        "original_price": "60,00",
+        "product_name": "Walton Pavilion Gaming Laptop 15 (43.60 cm) ec2151AX",
+        "condition": "Good",
+        "Display": "39.62cm (15.6) FHD (1920x1080) Matte LED Backlit Display with 45% NTSC",
+        "Generation": "Intel® 10th Generation Processor",
+        "CPU": "Intel® Core™ i5-10210U 1.60GHz up to 4.20GHZ" ,
+        "Cache_Memory": "4/6/8 MB Intel® Smart Cache",
+        "RAM": "8GB DDR4 2666MHz RAM"  ,
+        "Storage": "512GB SATAIII M.2 2280 SSD",
+        "Communication": "Wi-Fi 5.0 (802.11ac) + BT 5.0"
+
+    }
+
+]
