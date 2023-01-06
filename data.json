@@ -20,7 +20,7 @@
     },
     {
         
-        "category_id":"2",
+        "category_id":"1",
         "seller_name": "Juma Ahter",
         "included": "8 Month On-site Warranty",
         "rating":"Object" ,
@@ -39,7 +39,7 @@
     },
     {
         
-        "category_id":"3",
+        "category_id":"2",
         "seller_name": "Amdaul Haque",
         "included": "1 Year On-site Warranty",
         "rating":"Object" ,
@@ -58,7 +58,7 @@
     },
     {
         
-        "category_id":"4",
+        "category_id":"2",
         "seller_name": "Sheauly Akhter",
         "included": "2 Year On-site Warranty",
         "rating":"Object" ,
@@ -78,7 +78,7 @@
     },
     {
         
-        "category_id":"5",
+        "category_id":"3",
         "seller_name": "Halima Akhter",
         "included": "10 Manth On-site Warranty",
         "rating":"Object" ,
@@ -97,7 +97,7 @@
     },
     {
         
-        "category_id":"6",
+        "category_id":"3",
         "seller_name": "Aminul Haque",
         "included": "1 Year On-site Warranty",
         "rating":"Object" ,
