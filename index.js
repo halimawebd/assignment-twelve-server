@@ -185,26 +185,26 @@ async function run() {
     });
 
 //jwt start
-    // app.get("/jwt", async (req, res) => {
-    //   const email = req.query.email;
-    //   const query = { email: email };
-    //   const user = await usersCollection.findOne(query);
-    //   if (user) {
-    //     const token = jwt.sign({ email }, process.env.ACCESS_JWT_TOKEN, {
-    //       expiresIn: "5d",
-    //     });
-    //     return res.send({ accessToken: token });
-    //   }
-    //   res.status(403).send({ accessToken: "" });
-    // });
-    // //jwt end
+    app.get("/jwt", async (req, res) => {
+      const email = req.query.email;
+      const query = { email: email };
+      const user = await usersCollection.findOne(query);
+      if (user) {
+        const token = jwt.sign({ email }, process.env.ACCESS_JWT_TOKEN, {
+          expiresIn: "5d",
+        });
+        return res.send({ accessToken: token });
+      }
+      res.status(403).send({ accessToken: "" });
+    });
+    //jwt end
 
-    // //get user data
-    // app.get("/users", async (req, res) => {
-    //   const query = {};
-    //   const result = await usersCollection.find(query).toArray();
-    //   res.send(result);
-    // });
+    //get user data
+    app.get("/users", async (req, res) => {
+      const query = {};
+      const result = await usersCollection.find(query).toArray();
+      res.send(result);
+    });
     // app.get('/buyerSeller', async (req, res)=>{
     //   const filter = {role: 'buyer'}
     //   const query = {role: 'seller'}
