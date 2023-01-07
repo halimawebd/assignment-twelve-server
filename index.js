@@ -67,13 +67,13 @@ async function run() {
       res.send(addProduct);
     });
 
-    // app.get("/category/:id", async (req, res) => {
-    //   const id = req.params.id;
-    //   // console.log(id)
-    //   const filter = { category_id: id };
-    //   const result = await productsCollection.find(filter).toArray();
-    //   res.send(result);
-    // });
+    app.get("/category/:id", async (req, res) => {
+      const id = req.params.id;
+      // console.log(id)
+      const filter = { category_id: id };
+      const result = await productsCollection.find(filter).toArray();
+      res.send(result);
+    });
 
     //add product
     // app.post("/addProduct", verifyJWT, async (req, res) => {
