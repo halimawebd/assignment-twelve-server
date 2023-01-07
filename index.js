@@ -171,7 +171,7 @@ async function run() {
       if (email !== decodedEmail) {
         return res.status(403).send({ message: "forbidden access" });
       }
-
+      
       const query = { email: email };
       const bookings = await bookingsCollection.find(query).toArray();
       res.send(bookings);
