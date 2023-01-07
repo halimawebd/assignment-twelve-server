@@ -139,23 +139,23 @@ async function run() {
       res.send(result);
     });
     //bookings
-    // app.post("/bookings", verifyJWT, async (req, res) => {
-    //   const booking = req.body;
-    //   const query = {
-    //     productName: booking.productName,
-    //     email: booking.email,
-    //     // name: booking.name
-    //   };
-    //   const alreadyBooked = await bookingsCollection.find(query).toArray();
+    app.post("/bookings", verifyJWT, async (req, res) => {
+      const booking = req.body;
+      const query = {
+        productName: booking.productName,
+        email: booking.email,
+        // name: booking.name
+      };
+      const alreadyBooked = await bookingsCollection.find(query).toArray();
 
-    //   if (alreadyBooked.length > 0) {
-    //     const message = `You already have booked ${booking.productName}`;
-    //     return res.send({ acknowledged: false, message });
-    //   }
+      if (alreadyBooked.length > 0) {
+        const message = `You already have booked ${booking.productName}`;
+        return res.send({ acknowledged: false, message });
+      }
 
-    //   const result = await bookingsCollection.insertOne(booking);
-    //   res.send(result);
-    // });
+      const result = await bookingsCollection.insertOne(booking);
+      res.send(result);
+    });
 
     // app.get("/bookings/:id", async (req, res) => {
     //   const id = req.params.id;
