@@ -92,28 +92,28 @@ async function run() {
       const result = await advertiseCollection.find(query).toArray();
       res.send(result);
     });
-    // app.delete("/users/advertise/:id", async (req, res) => {
-    //   const id = req.params.id;
-    //   const filter = { _id:(id) };
-    //   const result = await advertiseCollection.deleteOne(filter);
-    //   res.send(result);
-    // });
-    // app.delete("/users/seller/:id", async (req, res) => {
-    //   const id = req.params.id;
-    //   const filter = { _id: ObjectId(id) };
-    //   const result = await productsCollection.deleteOne(filter);
-    //   res.send(result);
-    // });
-    // app.post("/wishlist", async (req, res) => {
-    //   const query = req.body;
-    //   const result = await wishListCollection.insertOne(query);
-    //   res.send(result);
-    // });
-    // app.get("/wishlist", async (req, res) => {
-    //   const query = {};
-    //   const result = await wishListCollection.find(query).toArray();
-    //   res.send(result);
-    // });
+    app.delete("/users/advertise/:id", async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id:(id) };
+      const result = await advertiseCollection.deleteOne(filter);
+      res.send(result);
+    });
+    app.delete("/users/seller/:id", async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: ObjectId(id) };
+      const result = await productsCollection.deleteOne(filter);
+      res.send(result);
+    });
+    app.post("/wishlist", async (req, res) => {
+      const query = req.body;
+      const result = await wishListCollection.insertOne(query);
+      res.send(result);
+    });
+    app.get("/wishlist", async (req, res) => {
+      const query = {};
+      const result = await wishListCollection.find(query).toArray();
+      res.send(result);
+    });
 
     // app.post('/report', async (req, res)=>{
     //   const body = req.body 
