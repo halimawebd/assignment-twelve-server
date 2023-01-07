@@ -22,22 +22,22 @@ const client = new MongoClient(uri, {
  });
 
 //verify jwt
-// function verifyJWT(req, res, next) {
-//   const authHeader = req.headers.authorization;
-//   if (!authHeader) {
-//     return res.status(401).send("unauthorized access");
-//   }
+function verifyJWT(req, res, next) {
+  const authHeader = req.headers.authorization;
+  if (!authHeader) {
+    return res.status(401).send("unauthorized access");
+  }
 
-//   const token = authHeader.split(" ")[1];
+  const token = authHeader.split(" ")[1];
 
-//   jwt.verify(token, process.env.ACCESS_JWT_TOKEN, function (error, decoded) {
-//     if (error) {
-//       return res.status(403).send({ message: "forbidden access" });
-//     }
-//     req.decoded = decoded;
-//     next();
-//   });
-// }
+  jwt.verify(token, process.env.ACCESS_JWT_TOKEN, function (error, decoded) {
+    if (error) {
+      return res.status(403).send({ message: "forbidden access" });
+    }
+    req.decoded = decoded;
+    next();
+  });
+}
 
 async function run() {
   try {
@@ -49,11 +49,11 @@ async function run() {
     const wishListCollection = client.db("assignment-twelve").collection("wishList");
     const advertiseCollection = client.db("assignment-twelve").collection("advertise");
     const reportCollection = client.db("assignment-twelve").collection("report");
-    // app.get("/category", async (req, res) => {
-    //   const query = {};
-    //   const result = await categoryCollection.find(query).toArray();
-    //   res.send(result);
-    // });
+    app.get("/category", async (req, res) => {
+      const query = {};
+      const result = await categoryCollection.find(query).toArray();
+      res.send(result);
+    });
     app.get("/products", async (req, res) => {
       const query = {};
       const result = await productsCollection.find(query).toArray();
@@ -115,16 +115,16 @@ async function run() {
       res.send(result);
     });
 
-    // app.post('/report', async (req, res)=>{
-    //   const body = req.body 
-    //   const result = await reportCollection.insertOne(body)
-    //   res.send(result)
-    // })
-    // app.get("/report", async (req, res) => {
-    //   const query = {};
-    //   const result = await reportCollection.find(query).toArray();
-    //   res.send(result);
-    // });
+    app.post('/report', async (req, res)=>{
+      const body = req.body 
+      const result = await reportCollection.insertOne(body)
+      res.send(result)
+    })
+    app.get("/report", async (req, res) => {
+      const query = {};
+      const result = await reportCollection.find(query).toArray();
+      res.send(result);
+    });
 
     app.delete("/users/wishlist/:id", async (req, res) => {
       const id = req.params.id;
