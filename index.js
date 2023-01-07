@@ -82,16 +82,16 @@ async function run() {
       res.send(result);
     });
 
-    // app.post("/advertise", async (req, res) => {
-    //   const query = req.body;
-    //   const result = await advertiseCollection.insertOne(query);
-    //   res.send(result);
-    // });
-    // app.get("/advertise", async (req, res) => {
-    //   const query = req.body;
-    //   const result = await advertiseCollection.find(query).toArray();
-    //   res.send(result);
-    // });
+    app.post("/advertise", async (req, res) => {
+      const query = req.body;
+      const result = await advertiseCollection.insertOne(query);
+      res.send(result);
+    });
+    app.get("/advertise", async (req, res) => {
+      const query = req.body;
+      const result = await advertiseCollection.find(query).toArray();
+      res.send(result);
+    });
     // app.delete("/users/advertise/:id", async (req, res) => {
     //   const id = req.params.id;
     //   const filter = { _id:(id) };
