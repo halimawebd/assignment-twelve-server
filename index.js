@@ -76,11 +76,11 @@ async function run() {
     });
 
     //add product
-    // app.post("/addProduct", verifyJWT, async (req, res) => {
-    //   const add = req.body;
-    //   const result = await productsCollection.insertOne(add);
-    //   res.send(result);
-    // });
+    app.post("/addProduct", verifyJWT, async (req, res) => {
+      const add = req.body;
+      const result = await productsCollection.insertOne(add);
+      res.send(result);
+    });
 
     // app.post("/advertise", async (req, res) => {
     //   const query = req.body;
